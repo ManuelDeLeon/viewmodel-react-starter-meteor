@@ -1,0 +1,16 @@
+{
+  "name": "viewmodel-react-starter-meteor-init",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "viewmodel-react": "^0.8.11"
+  },
+  "devDependencies": {
+    "viewmodel-react-plugin": "^0.8.7"
+  }
+}
