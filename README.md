@@ -1,2 +1,1 @@
-# viewmodel-react-starter-meteor
-Meteor boilerplate using viewmodel-react
+# viewmodel-react-meteor-starter

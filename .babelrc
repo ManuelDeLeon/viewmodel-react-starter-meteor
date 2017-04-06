@@ -1,1 +1,5 @@
-{ "plugins": [ "viewmodel-react-plugin" ] }
+{
+	"plugins": [
+		"viewmodel-react-plugin"
+	]
+}

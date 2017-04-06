@@ -6,7 +6,7 @@ import { App } from '../imports/App';
 import ViewModel from 'viewmodel-react';
 
 // Use Meteor's dependency management
-ViewModel.Tracker = Tracker; 
+ViewModel.Tracker = Tracker;
 
 Meteor.startup(() => {
   render(<App />, document.getElementById('app'));

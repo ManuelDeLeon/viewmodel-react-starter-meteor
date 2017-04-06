@@ -1,5 +1,8 @@
 App({
-  render(){
-    <h1>Hello World</h1>
-  }
+	render() {
+		<div>
+			<input b="check: isChecked" type="checkbox" />
+			<Button />
+		</div>
+	}
 });
