@@ -1,8 +1,9 @@
 App({
-	render() {
-		<div>
-			<input b="check: isChecked" type="checkbox" />
-			<Button />
-		</div>
-	}
-});
+  render() {
+    <div>
+      <h1>It Works!</h1>
+      <Person />
+      <Big b="defer: true"/>
+    </div>
+  }
+})
