@@ -1,34 +1,37 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import { Person } from './Person';
+import React from "react";
+import Adapter from "enzyme-adapter-react-16";
+import { shallow, configure } from "enzyme";
+import { Person } from "./Person";
 
-describe('Person', () => {
+configure({ adapter: new Adapter() });
 
-  describe('view model', () => {
+describe("Person", () => {
+  describe("view model", () => {
     let person;
     beforeEach(() => {
       person = new Person();
     });
 
-    describe('name', () => {
+    describe("name", () => {
       it("defaults to ''", () => {
-        expect(person.name()).toBe('');
+        expect(person.name()).toBe("");
       });
     });
   });
 
-  describe('bindings', ()=>{
+  describe("bindings", () => {
     const rendered = shallow(<Person />);
 
-    it("binds input", ()=>{
+    it("binds input", () => {
       const elements = rendered.find('input[data-bind="value: name"]');
       expect(elements.length).toBe(1);
-    })
+    });
 
-    it("binds label", ()=>{
-      const elements = rendered.find('label[data-bind="text: \'Hello \' + name"]');
+    it("binds label", () => {
+      const elements = rendered.find(
+        "label[data-bind=\"text: 'Hello ' + name\"]"
+      );
       expect(elements.length).toBe(1);
-    })
-  })
-  
+    });
+  });
 });
